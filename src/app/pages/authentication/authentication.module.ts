@@ -2,8 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {RouterModule, Routes} from '@angular/router';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {WithBgImageComponent} from './login/with-bg-image/with-bg-image.component';
+import {LoginComponent} from './login/login-component/login.component';
 import {WithSocialComponent} from './registration/with-social/with-social.component';
+import {AuthService} from "../../_services/auth.service";
+import {HttpClientModule} from "@angular/common/http";
+import {NotificationsService} from "../../_services/notifications.service";
+
 
 export const AuthenticationRoutes: Routes = [
   {
@@ -11,7 +15,7 @@ export const AuthenticationRoutes: Routes = [
     children: [
       {
         path: 'login',
-        component: WithBgImageComponent,
+        component: LoginComponent,
         data: {
           breadcrumb: 'Login'
         }
@@ -32,8 +36,13 @@ export const AuthenticationRoutes: Routes = [
     CommonModule,
     RouterModule.forChild(AuthenticationRoutes),
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
-  declarations: [WithBgImageComponent, WithSocialComponent]
+  providers : [
+    AuthService,
+    NotificationsService
+  ],
+  declarations: [LoginComponent, WithSocialComponent]
 })
 export class AuthenticationModule { }
