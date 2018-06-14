@@ -94,7 +94,7 @@ export class AdminComponent implements OnInit {
     this.pcodedHeaderPosition = 'fixed';
     this.pcodedSidebarPosition = 'fixed';
     this.headerTheme = 'theme1';
-    this.logoTheme = 'theme1';
+    this.logoTheme = 'theme3';
 
     this.toggleOn = true;
 

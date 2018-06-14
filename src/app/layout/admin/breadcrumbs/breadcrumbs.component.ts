@@ -36,6 +36,7 @@ export class BreadcrumbsComponent {
                 if (tempBreadcrumb !== routes.snapshot.data.breadcrumb) {
                   this.breadcrumbs.push({
                     label: routes.snapshot.data.breadcrumb,
+                    sublabel: routes.snapshot.data.sublabel ,
                     icon: icon,
                     status: status,
                     url: url

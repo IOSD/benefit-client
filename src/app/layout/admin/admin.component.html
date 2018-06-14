@@ -18,7 +18,7 @@
             <i class="ti-menu"></i>
           </a>
           <a [routerLink]="['/']">
-            <img class="img-fluid" src="assets/images/logo.png" alt="Theme-Logo"/>
+            <img class="img-fluid" src="assets/images/logo_benefit.png" alt="Theme-Logo"/>
           </a>
           <a (click)="onMobileMenu()" class="mobile-options">
             <i class="ti-more"></i>
@@ -36,150 +36,9 @@
                   <i class="ti-fullscreen"></i>
                 </a>
               </li>
-              <li class="mega-menu-top">
-                <a href="javascript:;">
-                  Mega
-                  <i class="ti-angle-down"></i>
-                </a>
-                <ul class="show-notification row">
-                  <li class="col-sm-3">
-                    <h6 class="mega-menu-title">Popular Links</h6>
-                    <ul class="mega-menu-links">
-                      <li><a [routerLink]="['/basic/button']">Buttons</a></li>
-                      <li><a [routerLink]="['/map']">Maps</a></li>
-                      <li><a [routerLink]="['/user/profile']">User Information</a></li>
-                    </ul>
-                  </li>
-                  <li class="col-sm-3">
-                    <h6 class="mega-menu-title">Mailbox</h6>
-                    <ul class="mega-mailbox">
-                      <li>
-                        <a href="javascript:;" class="media">
-                          <div class="media-left">
-                            <i class="ti-folder"></i>
-                          </div>
-                          <div class="media-body">
-                            <h5>Data Backup</h5>
-                            <small class="text-muted">Store your data</small>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:;" class="media">
-                          <div class="media-left">
-                            <i class="ti-headphone-alt"></i>
-                          </div>
-                          <div class="media-body">
-                            <h5>Support</h5>
-                            <small class="text-muted">24-hour support</small>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:;" class="media">
-                          <div class="media-left">
-                            <i class="ti-dropbox"></i>
-                          </div>
-                          <div class="media-body">
-                            <h5>Drop-box</h5>
-                            <small class="text-muted">Store large amount of data in one-box only
-                            </small>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:;" class="media">
-                          <div class="media-left">
-                            <i class="ti-location-pin"></i>
-                          </div>
-                          <div class="media-body">
-                            <h5>Location</h5>
-                            <small class="text-muted">Find Your Location with ease of use</small>
-                          </div>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="col-sm-3">
-                    <h6 class="mega-menu-title">Gallery</h6>
-                    <div class="row m-b-20">
-                      <div class="col-sm-4"><img class="img-fluid img-thumbnail" src="assets/images/mega-menu/01.jpg" alt="Gallery-1">
-                      </div>
-                      <div class="col-sm-4"><img class="img-fluid img-thumbnail" src="assets/images/mega-menu/02.jpg" alt="Gallery-2">
-                      </div>
-                      <div class="col-sm-4"><img class="img-fluid img-thumbnail" src="assets/images/mega-menu/01.jpg" alt="Gallery-3">
-                      </div>
-                    </div>
-                    <div class="row m-b-20">
-                      <div class="col-sm-4"><img class="img-fluid img-thumbnail" src="assets/images/mega-menu/02.jpg" alt="Gallery-4">
-                      </div>
-                      <div class="col-sm-4"><img class="img-fluid img-thumbnail" src="assets/images/mega-menu/01.jpg" alt="Gallery-5">
-                      </div>
-                      <div class="col-sm-4"><img class="img-fluid img-thumbnail" src="assets/images/mega-menu/02.jpg" alt="Gallery-6">
-                      </div>
-                    </div>
-                    <button class="btn btn-primary btn-sm btn-block">Browse Gallery</button>
-                  </li>
-                  <li class="col-sm-3">
-                    <h6 class="mega-menu-title">Contact Us</h6>
-                    <div class="mega-menu-contact">
-                      <div class="form-group row">
-                        <label for="example-text-input" class="col-3 col-form-label">Name</label>
-                        <div class="col-9">
-                          <input class="form-control" type="text" placeholder="Artisanal kale" id="example-text-input">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="example-search-input-email" class="col-3 col-form-label">Email</label>
-                        <div class="col-9">
-                          <input class="form-control" type="email" placeholder="Enter your E-mail Id" id="example-search-input-email">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="example-search-input-content" class="col-3 col-form-label">Contact</label>
-                        <div class="col-9">
-                          <input class="form-control" type="number" placeholder="+91-9898989898" id="example-search-input-content">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="exampleTextarea" class="col-3 col-form-label">Message</label>
-                        <div class="col-9">
-                          <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
             </ul>
             <ul [@mobileMenuTop]="isCollapsedMobile" class="nav-right" [ngClass]="isCollapsedMobile">
-              <li class="header-notification lng-dropdown">
-                <a href="javascript:;" id="dropdown-active-item">
-                  <img src="assets/images/flags/ENGLISH.jpg" alt=""> English
-                </a>
-                <ul class="show-notification">
-                  <li>
-                    <a href="javascript:;" data-lng="en">
-                      <img src="assets/images/flags/ENGLISH.jpg" alt=""> English
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:;" data-lng="es">
-                      <img src="assets/images/flags/SPAIN.jpg" alt=""> Spanish
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:;" data-lng="pt">
-                      <img src="assets/images/flags/PORTO.jpg" alt=""> Portuguese
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:;" data-lng="fr">
-                      <img src="assets/images/flags/FRANCE.jpg" alt=""> French
-                    </a>
-                  </li>
-                </ul>
-              </li>
+
               <li class="header-notification">
                 <a href="javascript:;">
                   <i class="ti-bell"></i>
@@ -251,11 +110,7 @@
                   </li>
                 </ul>
               </li>
-              <li>
-                <div class="upgrade-button-header f-left">
-                  <a href="https://codedthemes.com/item/guru-able-admin-template/" target="_blank" class="btn btn-primary txt-white p-t-10 p-b-10">Upgrade To Pro</a>
-                </div>
-              </li>
+
             </ul>
           </div>
         </div>
@@ -272,7 +127,7 @@
                 <img class="img-40 img-radius" src="assets/images/avatar-4.jpg" alt="User-Profile-Image">
                 <div class="user-details">
                   <span>John Doe</span>
-                  <span id="more-details" (click)="toggleOpenedSidebar()">UX Designer<i class="ti-angle-down"></i></span>
+                  <span id="more-details" (click)="toggleOpenedSidebar()">Coach<i class="ti-angle-down"></i></span>
                 </div>
               </div>
               <div class="main-menu-content">
@@ -285,19 +140,12 @@
                 </ul>
               </div>
             </div>
-            <div class="pcoded-search">
-              <span class="searchbar-toggle">  </span>
-              <div class="pcoded-search-box ">
-                <input type="text" placeholder="Search">
-                <span class="search-icon"><i class="ti-search" aria-hidden="true"></i></span>
-              </div>
-            </div>
             <div slimScroll width="100%" height="calc(100% - 80px)" size="4px" color="#fff" opacity="0.3" allowPageScroll="false">
               <div *ngFor="let asideItems of menuItems.getAll()" class="d-color">
                 <div class="pcoded-navigatio-lavel" [attr.menu-title-theme]="menuTitleTheme">{{asideItems.label}}</div>
                 <ul class="pcoded-item pcoded-left-item" [attr.item-border]="itemBorder" [attr.item-border-style]="itemBorderStyle" [attr.subitem-border]="subItemBorder" *ngFor="let asideItem of asideItems.main" appAccordionLink group="{{asideItem.state}}">
                   <li [routerLinkActive]="['active']" *ngIf="asideItem.type === 'external'" appAccordionLink group="{{asideItem.state}}">
-                    <a href="{{asideItem.external}}" target="{{asideItem.target ? '_blank' : '_self'}}" appAccordionToggle>
+                    <a routerLink="{{asideItem.external}}" target="{{asideItem.target ? '_blank' : '_self'}}" appAccordionToggle>
                       <span class="pcoded-micon"><i class="{{ asideItem.icon }}"></i><b>{{ asideItem.short_label }}</b></span>
                       <span class="pcoded-mtext">{{ asideItem.name }}</span>
                       <span *ngFor="let asideBadge of asideItem.badge" class="pcoded-badge label label-{{ asideBadge.type }}">{{asideBadge.value}}</span>

@@ -20,7 +20,8 @@ import {ToastyModule} from "ng2-toasty";
     AdminComponent,
     BreadcrumbsComponent,
     TitleComponent,
-    AuthComponent
+    AuthComponent,
+
   ],
   imports: [
     BrowserModule,

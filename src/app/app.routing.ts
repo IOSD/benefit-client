@@ -15,6 +15,18 @@ export const AppRoutes: Routes = [
         path: 'dashboard',
         loadChildren: './pages/dashboard/dashboard-default/dashboard-default.module#DashboardDefaultModule'
       }, {
+        path: 'profile',
+        loadChildren: './pages/profile/profile.module#ProfileModule'
+      }, {
+        path: 'calls',
+        loadChildren: './pages/calls/calls-default/call-default.module#CallDefaultModule'
+      },{
+        path: 'expiry',
+        loadChildren: './pages/expiry/expirying-plans/expiry-plans.module#ExpiryPlansModule'
+      },{
+        path: 'timeline',
+        loadChildren: './pages/timeline/timeline/timeline.module#TimelineModule'
+      }, {
         path: 'basic',
         loadChildren: './pages/ui-elements/basic/basic.module#BasicModule'
       }, {
@@ -26,9 +38,6 @@ export const AppRoutes: Routes = [
       }, {
         path: 'map',
         loadChildren: './pages/map/google-map/google-map.module#GoogleMapModule',
-      }, {
-        path: 'user',
-        loadChildren: './pages/user/profile/profile.module#ProfileModule'
       }, {
         path: 'simple-page',
         loadChildren: './pages/simple-page/simple-page.module#SimplePageModule'

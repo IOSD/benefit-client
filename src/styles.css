@@ -1,6 +1,7 @@
 @import "~ng2-toasty/style-bootstrap.css";
 @import "~ng2-toasty/style-default.css";
 @import "~ng2-toasty/style-material.css";
+/*@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';*/
 
 body {
   background-color: #f3f3f3;

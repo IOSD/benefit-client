@@ -1,19 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DashboardDefaultComponent } from './dashboard-default.component';
 import {RouterModule, Routes} from '@angular/router';
 import {SharedModule} from '../../../shared/shared.module';
-import {ChartModule} from 'angular2-chartjs';
+import {CallDefaultComponent} from "./call-default.component";
 import {BenefitModule} from "../../../benefit/benefit.module";
 
-export const DashboardDefaultRoutes: Routes = [
+export const CallDefaultRoutes: Routes = [
   {
     path: '',
-    component: DashboardDefaultComponent,
+    component: CallDefaultComponent,
     data: {
-      breadcrumb: 'Default',
+      breadcrumb: "Today's Calls",
       icon: 'icofont-home bg-c-blue',
-      status: false
+      status: true
     }
   }
 ];
@@ -21,13 +20,12 @@ export const DashboardDefaultRoutes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(DashboardDefaultRoutes),
+    RouterModule.forChild(CallDefaultRoutes),
     SharedModule,
-    ChartModule,
     BenefitModule
   ],
   declarations: [
-    DashboardDefaultComponent
+    CallDefaultComponent,
   ]
 })
-export class DashboardDefaultModule { }
+export class CallDefaultModule { }

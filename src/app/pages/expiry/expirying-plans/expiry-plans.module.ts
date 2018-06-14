@@ -1,19 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DashboardDefaultComponent } from './dashboard-default.component';
 import {RouterModule, Routes} from '@angular/router';
 import {SharedModule} from '../../../shared/shared.module';
-import {ChartModule} from 'angular2-chartjs';
+import {ExpiryPlansComponent} from "./expiry-plans.component";
 import {BenefitModule} from "../../../benefit/benefit.module";
 
-export const DashboardDefaultRoutes: Routes = [
+export const ExpiryPlansRoutes: Routes = [
   {
     path: '',
-    component: DashboardDefaultComponent,
+    component: ExpiryPlansComponent,
     data: {
-      breadcrumb: 'Default',
+      breadcrumb: "Expiring Plans",
       icon: 'icofont-home bg-c-blue',
-      status: false
+      status: true
     }
   }
 ];
@@ -21,13 +20,12 @@ export const DashboardDefaultRoutes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(DashboardDefaultRoutes),
+    RouterModule.forChild(ExpiryPlansRoutes),
     SharedModule,
-    ChartModule,
     BenefitModule
   ],
   declarations: [
-    DashboardDefaultComponent
+    ExpiryPlansComponent
   ]
 })
-export class DashboardDefaultModule { }
+export class ExpiryPlansModule { }

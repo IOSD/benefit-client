@@ -1,0 +1,19 @@
+.col-container {
+  display: flex; /* Make the container element behave like a table */
+  width: 100%; /* Set full-width to expand the whole page */
+}
+
+.col {
+  flex: auto; /* Make elements inside the container behave like table cells */
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.one {
+  flex : 1;
+}
+
+.two {
+  flex: 2;
+}
